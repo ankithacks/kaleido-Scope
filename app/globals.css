@@ -1,6 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html,
+body,
+:root{
+  height: 100%;
+  @apply bg-neutral-900/80;
+}
+
+.hidden-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hidden-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+@layer base{
+  :root{
+    --background:0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    
+  }
+}
 
 @layer base {
   :root {
